@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
 }
 
 .cabecera{
@@ -68,7 +73,48 @@ header{
 
 .menu a:hover{
     background-color: white;
-    color: black;
+    color: rgb(214, 214, 214);
     transform: scale(1.05);
     transition-duration: 0.3s;
+}
+
+.sobrenosotros {
+    background-color: rgb(63, 63, 63);
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgb(211, 211, 211);
+    line-height: 1.6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.sobrenosotros h2 {
+    font-size: 36px;
+    color: rgb(103, 188, 195);
+    margin-bottom: 20px;
+}
+
+.sobrenosotros p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sobrenosotros a {
+    display: inline-block;
+    color: white;
+    background-color: rgb(103, 188, 195);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sobrenosotros a:hover {
+    background-color: rgb(80, 150, 155);
+    transform: scale(1.05);
 }
