@@ -25,7 +25,6 @@ header{
     top: 0;
     position: absolute;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -46,7 +45,7 @@ header{
     color: rgb(255, 255, 255);
 }
 
-.cabecera a{
+#apuntate{
     margin-top: 30px;
     color: white;
     text-decoration: none;
@@ -63,58 +62,159 @@ header{
 }
 
 .menu a{
-    color: white;
     text-decoration: none;
+    color: white;
     font-size: 20px;
     font-weight: bold;
-    border: 1px solid white;
     padding: 5px 10px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
 }
 
-.menu a:hover{
+a:hover{
     background-color: white;
-    color: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
     transform: scale(1.05);
     transition-duration: 0.3s;
 }
 
-.sobrenosotros {
-    background-color: rgb(63, 63, 63);
-    padding: 50px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: rgb(211, 211, 211);
-    line-height: 1.6;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    max-width: 800px;
-}
 
-.sobrenosotros h2 {
-    font-size: 36px;
-    color: rgb(103, 188, 195);
-    margin-bottom: 20px;
-}
-
-.sobrenosotros p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.sobrenosotros a {
-    display: inline-block;
+.primeraseccion{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
     color: white;
-    background-color: rgb(103, 188, 195);
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
-.sobrenosotros a:hover {
-    background-color: rgb(80, 150, 155);
+.primeraseccion .texto-intro{
+    width: 60%;
+    text-align: justify;
+}
+
+.primeraseccion .texto-intro h1{
+    color: rgb(9, 209, 219);
+    font-size: 80px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.primeraseccion .texto-intro p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.imagen-intro img{
+    width: 630px;
+    height: 400px;
+}
+.imagen-intro img:hover{
     transform: scale(1.05);
+    transition-duration: 0.3s; 
+}
+
+.ubicaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+.ubicaciones h1{
+    color: rgb(9, 209, 219);
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.ubicaciones #imagen{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.ubicaciones img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.valoracion{
+    padding: 20px;
+}
+
+.valoracion h1{
+    color: rgb(99, 209, 219);
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.valoracion h3{
+    color: rgb(65, 143, 152);
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    font-weight: lighter;
+    margin-top: -10px;
+}
+
+.valoracion-content{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+}
+.valoracion-content .estrellas{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.estrellas img{
+    width: 55%;
+
+}
+
+.comentarios{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(230, 230, 230);
+    
+    height: 600px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(26, 26, 26);
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.comentario h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#imagenperfil img{
+    width: 85px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#comentario1-cabecera{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
 }
