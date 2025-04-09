@@ -71,7 +71,7 @@ header{
     transition-duration: 0.3s;
 }
 
-a:hover{
+#apuntate:hover{
     background-color: white;
     color: rgb(0, 0, 0);
     transform: scale(1.05);
@@ -196,8 +196,13 @@ a:hover{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(45, 45, 45);
     border: solid 1px rgb(0, 0, 0);
+}
+.comentario:hover{
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.01);
+    transition-duration: 0.3s;
 }
 
 .comentario h1{
@@ -205,6 +210,14 @@ a:hover{
     font-size: 30px;
     text-align: center;
 }
+
+.comentario p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
 #imagenperfil img{
     width: 85px;
     height: 80px;
@@ -217,4 +230,129 @@ a:hover{
     gap: 10px;
     align-items: center;
     margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+.footer-section .contact p {
+    margin: 5px 0;
+}
+
+.footer-section .contact p i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    color: rgb(65, 143, 152);
+}
+
+.contact-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(99, 209, 219);
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.contact-form button {
+    background-color: rgb(99, 209, 219);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: rgb(65, 143, 152);
+}
+
+.cabecera2{
+    
 }
