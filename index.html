@@ -17,6 +17,7 @@
             <div class="menu">
                 <a href="#">Inicio</a>
                 <a href="contact.html">Contáctanos</a>
+                <button id="modo-toggle">Cambiar modo</button>
             </div>
         </header>
 
@@ -68,6 +69,25 @@
             <img src="españa.png" alt="">
         </div>
     </section>
+
+    <section class="carrusel">
+        <div class="carrusel-contenedor">
+          <img src="atreum1.webp" class="carrusel-img activa" alt="Imagen 1">
+          <img src="atreum2.webp" class="carrusel-img" alt="Imagen 2">
+          <img src="atreum3.webp" class="carrusel-img" alt="Imagen 3">
+          <img src="atreum4.webp" class="carrusel-img" alt="Imagen 4">
+        </div>
+        <button class="carrusel-btn izquierda">⟨</button>
+        <button class="carrusel-btn derecha">⟩</button>
+        <!-- Opcional: indicadores de página para el carrusel -->
+        <div class="carrusel-indicadores">
+          <span class="indicador activo" data-index="0"></span>
+          <span class="indicador" data-index="1"></span>
+          <span class="indicador" data-index="2"></span>
+          <span class="indicador" data-index="3"></span>
+        </div>
+      </section>
+      
     
     <section class="valoracion">
         <h1>¿Por qué somos los mejores?</h1>
@@ -226,5 +246,6 @@
             <p>&copy; 2023 Altrum Gym. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
